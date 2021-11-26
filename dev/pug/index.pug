@@ -1,0 +1,44 @@
+extends layout/main
+
+block variables
+    -var title = 'Главная страница'
+
+block content
+    section.head.section-margin
+        .container
+            .head-content
+                .head-content__descr
+                    h1.section-title Теплообменное оборудование от производителя
+                    ul.advantage-list
+                        li Поставки со склада производителя
+                        li Расширенная гарантия до 5 лет
+                        li Консультация инженеров по подбору
+                        li Гибкие условия с отсрочкой платежа
+                        li Бесплатная доставка по России
+                    .buttons
+                        a(href="#").btn Расчёт стоимости
+                        a(href="#").btn.btn-gray Консультация
+                .head-content__img
+                    img(src="static/images/content/head-pto2.png" alt="")
+    section.partners.section-margin
+        .container
+            .partners-items
+                a(href="#").partners-item
+                    img(src="static/images/content/partners/ridan.png" alt="ridan")
+                a(href="#").partners-item
+                    img(src="static/images/content/partners/danfos.png" alt="danfos")
+                a(href="#").partners-item
+                    img(src="static/images/content/partners/phoenix.png" alt="phoenix")
+                a(href="#").partners-item
+                    img(src="static/images/content/partners/unnamed.png" alt="unnamed")
+                a(href="#").partners-item
+                    img(src="static/images/content/partners/kaori.png" alt="kaori")
+                a(href="#").partners-item
+                    img(src="static/images/content/partners/sondex.png" alt="sondex")
+    section.catalog.section-margin
+        .container
+            h1.section-title Каталог
+            a(href="#").section-link Посмотреть весь каталог
+            .catalog-items
+
+
