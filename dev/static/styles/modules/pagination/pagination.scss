@@ -1,0 +1,83 @@
+.pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+  .select {
+    min-width: 60px;
+    margin-bottom: 0;
+  }
+}
+
+.pagination {
+  display: flex;
+  height: 36px;
+  padding: 0 25px;
+
+  //@include screen(1199px) {
+  //  height: 50px;
+  //  margin-top: 50px;
+  //  padding: 0 10px;
+  //  border-radius: 25px;
+  //}
+}
+
+.page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: .4s ease;
+  color: #171717;
+  font-size: 18px;
+
+  &:hover,
+  &.current {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &.prev:hover,
+  &.next:hover {
+    background-color: transparent;
+    color: $blue;
+  }
+  //@include screen(1199px) {
+  //  padding: 0 15px;
+  //  font-size: 16px;
+  //  line-height: 50px;
+  //}
+  //@include screen(touch) {
+  //  padding: 0 14px;
+  //  display: none;
+  //
+  //  &:nth-of-type(2) {
+  //    position: relative;
+  //    padding-right: 50px;
+  //
+  //    &::after {
+  //      content: '...';
+  //      position: absolute;
+  //      font-size: 25px;
+  //      top: 0;
+  //      left: 45px;
+  //    }
+  //  }
+  //
+  //  &:nth-child(-n+3),
+  //  &:nth-last-child(-n+3) {
+  //    display: block;
+  //  }
+  //
+  //  &:nth-last-child(-n+4) {
+  //    padding-right: 14px;
+  //
+  //    &::after {
+  //      content: none;
+  //    }
+  //  }
+  //}
+}

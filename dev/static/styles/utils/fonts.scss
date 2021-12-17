@@ -10,4 +10,7 @@
   }
 }
 @include font-face('Jost', '../fonts/Jost/Jost-Regular/Jost-Regular', 400, 'normal');
+@include font-face('Jost-Light', '../fonts/Jost/Jost-Light/Jost-Light', 400, 'normal');
+@include font-face('Jost-Medium', '../fonts/Jost/Jost-Medium/Jost-Medium', 500, 'normal');
 @include font-face('Jost-SemiBold', '../fonts/Jost/Jost-SemiBold/Jost-SemiBold', 600, 'normal');
+@include font-face('PTRootUI-Light', '../fonts/PTRootUI/PTRootUI-Light/PTRootUI-Light', 400, 'normal');

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'PTRootUI-Light';
+    src: local('PTRootUI Light'), local('PTRootUI-Light'),
+    url('../fonts/PTRootUI/PTRootUI-Light/PTRootUI-Light.woff2') format('woff2'),
+    url('../fonts/PTRootUI/PTRootUI-Light/PTRootUI-Light.woff') format('woff'),
+    url('../fonts/PTRootUI/PTRootUI-Light/PTRootUI-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+

@@ -1,15 +1,52 @@
 header.header
     .container
         .header-top
-            .logo
-                img(src="static/images/common/logo.png" alt="Heatinvest")
+            a(href="index.html").logo
+                img(src="static/images/common/logo2.png" alt="Heatinvest")
+                span Теплообменное оборудование от производителя
             .user-info
-                p.location Москва
-                p.manager manager22@heatinvest.com
-                a(href="tel:84997059196").phone 8 (499) 705-91-96
-                a(href="tel:88005557583").phone.phone-free 8 (800) 555-75-83
+                .user-info__block
+                    a(href="#city").location.popup Москва
+                    span Выбрать город
+                .user-info__block
+                    a(href="mailto:manager22@heatinvest.com").manager manager22@heatinvest.com
+                    span Скопировать почту
+                .user-info__block
+                    a(href="tel:84997059196").phone 8 (499) 705-91-96
+                    a(href="tel:88005557583").phone.phone-free 8 (800) 555-75-83
+                button.btn.btn-white Напишите нам
         .header-middle
-            button.catalog-btn Католог товаров
+            button.menu-catalog__btn Католог товаров
+            .menu-catalog
+                button.close-btn
+                .menu-catalog__block
+                    p.menu-catalog__title Теплообменники
+                    ul.menu-catalog__list
+                        li
+                            a(href="#") Ридан
+                        li
+                            a(href="#") Danfuss
+                        li
+                            a(href="#") Феникс
+                        li
+                            a(href="#") Alfa Laval
+                        li
+                            a(href="#") Kaori
+                        li
+                            a(href="#") Sondex
+                .menu-catalog__block
+                    p.menu-catalog__title Типы
+                    ul.menu-catalog__list
+                        li
+                            a(href="#") Пластинчатые
+                        li
+                            a(href="#") Паяные
+                        li
+                            a(href="#") Спиральные
+                        li
+                            a(href="#") Сварные
+                        li
+                            a(href="#") Полусварные
             form.search-form
                 input(name="search" placeholder="Поиск по товарам").search-form__field
                 button(type="submit").search-form__btn
@@ -18,16 +55,17 @@ header.header
         .header-bottom
             ul.main-nav
                 li
-                    a(href="#") Главная
-                li
                     a(href="#") Расчёт стоимости
                 li
-                    a(href="#") Подбор
+                    a(href="#") Доставка
+                li
+                    a(href="#") Оплата
                 li
                     a(href="#") Новости
                 li
                     a(href="#") О компании
                 li
+                    a(href="#") Информация
+                li
                     a(href="#") Контакты
-            a(href="#").offer Запрос коммерческого предложения
 
