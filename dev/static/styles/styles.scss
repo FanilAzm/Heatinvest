@@ -64,6 +64,10 @@ input,
 select,
 button { outline: none; }
 
+::placeholder {
+  color: #A0A0A0;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -96,6 +100,10 @@ button { outline: none; }
   }
 }
 
+.text-left {
+  text-align: left;
+}
+
 .section-link {
   position: relative;
   display: inline-block;
@@ -117,6 +125,13 @@ button { outline: none; }
   font-size: 13px;
   font-family: $lightFont;
   color: $blue;
+}
+.gray-link {
+  border-bottom: 1px dashed #9D9D9D;
+  font-size: 14px;
+  font-family: $lightFont;
+  line-height: 1.2;
+  color: #9D9D9D;
 }
 
 .section-items {
@@ -208,7 +223,120 @@ button { outline: none; }
   }
 }
 
+// Tabs
+.tabs__item {
+  display: inline-block;
+  margin-right: 50px;
+  padding-bottom: 10px;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 18px;
+  font-family: $boldFont;
+  background-color: transparent;
+  cursor: pointer;
+  &.active {
+    border-bottom: 2px solid #3F72AF;
+  }
+}
+.tabs__content {
+  text-align: left;
+  padding-top: 35px;
+}
+.tabs__content-item {
+  display: none;
+  font-size: 14px;
+  &.active {
+    display: block;
+  }
+}
+
+// Table
+.table {
+  //display: block;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: center;
+  font-size: 14px;
+  thead {
+    background-color: #E9E9E9;
+    font-family: $boldFont;
+  }
+  th, td {
+    padding: 10px;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+  }
+  tr {
+    &:first-child {
+      th {
+        &:first-child {
+          border-top-left-radius: 8px;
+        }
+        &:last-child {
+          border-top-right-radius: 8px;
+        }
+      }
+    }
+    &:last-child {
+      td {
+        &:last-child {
+          border-bottom-right-radius: 8px;
+        }
+      }
+    }
+    &:nth-child(8) {
+      td {
+        &:first-child {
+          border-bottom-left-radius: 8px;
+        }
+      }
+    }
+  }
+}
+
+// Upload file
+.file-upload {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  input[type="file"] {
+    display: none;
+  }
+}
+.file-upload__custom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 13px 20px;
+  border: none;
+  background: #F3F3F3;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: $mainFont;
+  color: #A0A0A0;
+  & > *:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.file-upload__text {
+  position: relative;
+  padding-left: 27px;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    @include sprite($icon-download);
+  }
+}
+
+
 //Модули
 @import "modules/modules";
 @import "pages/index";
 @import "pages/pto";
+@import "pages/one-product";

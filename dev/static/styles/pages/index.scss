@@ -269,6 +269,9 @@
     font-family: $lightFont;
     line-height: 1.2;
     color: #929292;
+    &-info {
+      display: block;
+    }
   }
   &__price {
     position: relative;

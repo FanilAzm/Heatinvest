@@ -16,6 +16,7 @@ $(document).ready(function () {
     $('.menu-catalog').removeClass('active')
   })
 
+  // Select
   const selectCurrent = document.querySelectorAll('.select__header')
   const selectItem = document.querySelectorAll('.select__item')
   selectCurrent.forEach((item) => {
@@ -30,7 +31,49 @@ $(document).ready(function () {
     })
   })
 
-  // eslint-disable-next-line no-undef
+  // Download file
+  $('.file-upload input[type=file]').change(function () {
+    const fileName = $(this).val().replace(/.*\\/, '')
+    $(this).closest('.file-upload').find('.file-upload__text').html(fileName)
+  })
+
+  // Tabs
+  $('.tabs__item').on('click', function () {
+    var $this = $(this)
+    var item = $this.closest('.tabs__item')
+    var container = $this.closest('.tabs')
+    var content = container.find('.tabs__content-item')
+    var ndx = item.index()
+
+    item.addClass('active')
+      .siblings()
+      .removeClass('active')
+
+    content.eq(ndx)
+      .addClass('active')
+      .siblings()
+      .removeClass('active')
+  })
+
+  // Product slider
+  $('.one-product__slider-big').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    centerMode: true,
+    asNavFor: '.one-product__slider-nav'
+  })
+  $('.one-product__slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.one-product__slider-big',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true
+  })
+
+  // Popup
   $('.popup').magnificPopup({
     type: 'inline',
 

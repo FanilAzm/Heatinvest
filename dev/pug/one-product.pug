@@ -1,0 +1,304 @@
+extends layout/main
+
+block variables
+    -var title = 'Теплообменник Ридан НН 22 ДУ 100'
+
+block content
+    section.section-margin
+        .container
+            h2.section-title Теплообменник Ридан НН 22 ДУ 100
+            ul.breadcrumbs
+                include modules/breadcrumbs/breadcrumbs
+                +breadcrumbs-item('Главная','index.html')
+                +breadcrumbs-item('Каталог','#')
+                +breadcrumbs-item('Теплообменник Ридан НН 22 ДУ 100')
+    section.one-product.section-margin
+        .container
+            .one-product__content
+                .one-product__slider
+                    .one-product__slider-big
+                        .one-product__slider-img
+                            img(src="static/images/content/product-img-2.png", alt="Product")
+                        .one-product__slider-img
+                            img(src="static/images/content/product-img-3.png", alt="Product")
+                        .one-product__slider-img
+                            img(src="static/images/content/product-img-2.png", alt="Product")
+                    .one-product__slider-nav
+                        .one-product__slider-img
+                            img(src="static/images/content/product-img-2.png", alt="Product")
+                        .one-product__slider-img
+                            img(src="static/images/content/product-img-3.png", alt="Product")
+                        .one-product__slider-img
+                            img(src="static/images/content/product-img-2.png", alt="Product")
+                .one-product__info
+                    .one-product__block
+                        .one-product__text
+                            span.one-product__price От
+                                span.one-product__price-info 19497
+                            a(href="#").gray-link Нашли дешевле?
+                        a(href="#").one-product__img
+                            img(src="static/images/content/partners/ridan.png" alt="ridan")
+                    ul.one-product__list
+                        li Срок поставки со склада от 3 дней
+                        li Расчёт и подбор от 30 минут
+                        li Расширенная гарантия до 5 лет
+                    p.one-product__descr Отличительные черты модели Ridan НН №22 ДУ 100 – это высокое качество сборки, неприхотливость в эксплуатации, надежность при работе, устойчивость к вибрациям и отличные рабочие показатели в целом.
+                    button.btn Рассчитать
+                    button.btn.btn-white Консультация по выбору
+    section.one-product-description.section-margin
+        .container
+            .tabs
+                ul.tabs__list
+                    li.tabs__item.active
+                        p Описание
+                    li.tabs__item
+                        p Характеристики
+                    li.tabs__item
+                        p Применение
+                    li.tabs__item
+                        p Оплата
+                    li.tabs__item
+                        p Доставка
+                ul.tabs__content
+                    li.tabs__content-item.active
+                        p Отличительные черты модели Ridan НН №22 ДУ 100 – это высокое качество сборки, неприхотливость в эксплуатации, надежность при работе, устойчивость к вибрациям и отличные рабочие показатели в целом. Данная установка не подвергается сильным загрязнениям, которые могут быть вызваны накипью или осадками, чаще всего образующимися от жидкостей (воды).
+                        table.table.one-product-type
+                            thead
+                                tr
+                                    th(rowspan="2") Тип теплообменника
+                                    th(rowspan="2") № Рамы
+                                    th(colspan="3") Размеры,мм
+                                    th(colspan="2") Стяжные шпильки
+                                    th(rowspan="2") Кол-во пластин, шт
+                                    th(rowspan="2") Макс. масса, кг
+                                tr
+                                    th L
+                                    th L1
+                                    th L2
+                                    th Размер
+                                    th Кол-во, шт.
+                            tbody
+                                tr
+                                    td(colspan="9").text-left Расчетное давление 1,0 МПа (10 кгс/см2)
+                                tr
+                                    td(rowspan="5").text-left общепромышленное/специальное исполнение
+                                tr
+                                    td 1
+                                    td 700
+                                    td 640
+                                    td 500
+                                    td(rowspan="4") М24
+                                    td(rowspan="4") 10
+                                    td 11-50
+                                    td 315
+                                tr
+                                    td 2
+                                    td 1000
+                                    td 940
+                                    td 800
+                                    td 51-105
+                                    td 385
+                                tr
+                                    td 3
+                                    td 1400
+                                    td 1340
+                                    td 1200
+                                    td 106-178
+                                    td 480
+                                tr
+                                    td 4
+                                    td 1700
+                                    td 1640
+                                    td 1500
+                                    td 179-232
+                                    td 555
+                                tr
+                                    td(colspan="9").text-left Расчетное давление 1,6 МПа (16 кгс/см2)
+                                tr
+                                    td(rowspan="5").text-left НН 22<br/>общепромышленное/специальное исполнение
+                                tr
+                                    td 1
+                                    td 705
+                                    td 645
+                                    td 500
+                                    td(rowspan="4") М24
+                                    td(rowspan="4") 10
+                                    td 11-50
+                                    td 365
+                                tr
+                                    td 2
+                                    td 1005
+                                    td 945
+                                    td 800
+                                    td 51-105
+                                    td 450
+                                tr
+                                    td 3
+                                    td 1405
+                                    td 1345
+                                    td 1200
+                                    td 106-178
+                                    td 565
+                                tr
+                                    td 4
+                                    td 1705
+                                    td 1645
+                                    td 1500
+                                    td 179-232
+                                    td 650
+
+                    li.tabs__content-item
+                        table.table.one-product-specification
+                            thead
+                                tr
+                                    th(colspan="2") Параметры теплообменника
+                            tbody
+                                tr
+                                    td Производитель
+                                    td Ридан
+                                tr
+                                    td Рабочая температура
+                                    td от –30 °С до +200 °С
+                                tr
+                                    td Присоединение
+                                    td Фланцевое, ДУ 100 мм
+                                tr
+                                    td Расход, макс.
+                                    td 160 м3/ч
+                                tr
+                                    td Максимальное рабочее давление
+                                    td до 25 бар
+                                tr
+                                    td Используемые материал прокладок
+                                    td Nitrile, EPDM, Silicone, Viton и их модификации
+                                tr
+                                    td Материал пластин
+                                    td AISI 304, AISI 316, SMO 254, Titan, а также Hastelloy C-276
+                                tr
+                                    td Теплоноситель
+                                    td вода, пар, этиленгликоль, масла, нефть, кислоты, пищевые жидкости, фреон и др.
+                                tr
+                                    td Основной тип пластин
+                                    td TK, TL, TM
+                                tr
+                                    td Промежуточный тип пластин
+                                    td ТМTL, ТКТМ, ТКТL, TLX, TLTLX, TYK
+                                tr
+                                    td Площадь одной пластины
+                                    td 0,4 м2
+                                tr
+                                    td Площадь теплообмена, макс.,
+                                    td 150,8 м2
+                                tr
+                                    td Допустимое количество пластин
+                                    td 11 - 379 шт
+                                tr
+                                    td Срок эксплуатации
+                                    td не менее 10 лет
+                    li.tabs__content-item
+                        p Модель Ридан НН 04 ДУ 32 предназначена для осуществления различных теплообменных процессов, а именно: в системах горячего водоснабжения и теплоснабжения, вентиляции и кондиционирования. Теплообменник Ридан НН 04 ДУ 32 имеет широкую сферу применения, и может использоваться как на небольших производствах, так и на масштабных предприятиях, или в жилых помещениях.
+                        .pto-links
+                            a(href="#").section-link Теплообменник пластинчатый разборный
+                            a(href="#").section-link Теплообменник пластинчатый разборный 100 квт
+                            a(href="#").section-link Теплообменник пластинчатый разборный расчёт
+                            a(href="#").section-link Теплообменник пластинчатый разборный гвс
+                            a(href="#").section-link Теплообменник пластинчатый разборный для системы отопления
+                    li.tabs__content-item
+                        p Оплата заказа производится после подтверждения заказа и получения счета от нашего менеджера. Безналичный расчет возможен как для юридических, так и для физических лиц. Для Вашего удобства реализована система автоматического оповещения о поступлении денег по заказу. За 5 лет успешной работы в благонадежности нашей компании убедилось более 3000 клиентов.
+                    li.tabs__content-item
+                        p В настоящее время на российском рынке насчитывается больше 38 000 транспортных компаний. Осознавая все сложности, которые могут возникнуть при доставке груза, нами было принято принципиальное решение — доставка оборудования для клиента должна обходиться максимально легко и прозрачно. За более чем 5-летний период работы, мы осуществили более 2000 поставок инженерного оборудования по России и странам ближнего зарубежья. Этот опыт позволяет нам осуществлять доставку Вашего оборудования на самых выгодных условиях. Мы работаем с следующими транспортными компаниями:
+                        ul.delivery-list
+                            li DPD (АО «Армадилло Бизнес Посылка»)
+                            li ООО «Деловые линии»
+                            li ООО «ПЭК»
+                            li ООО «Азимут»
+                            li ООО «РАТЭК»
+                            li ООО «АвтоКотракт»
+                        p Оборудование будет доставлено до терминала транспортной компании в Вашем городе. Весь процесс поставки ежедневно мониторится нашими логистами. Кроме этого для Вашего удобства реализована система автоматических уведомлений о статусе груза. Мы гарантируем — Ваш груз будет доставлен точно по месту, вовремя, в целости и сохранности.
+    section.one-product-calculation.section-margin
+        .container
+            h2.section-title Расчет теплообменника
+            form.calculation-form
+                .calculation-form__content
+                    .calculation-form__block
+                        h4.calculation-form__title Сфера применения
+                        .calculation-form__fields
+                            .select
+                                .select__header
+                                    span.select__current Применение
+                                    img(src="static/images/common/form-arrow.png" alt="#")
+                                .select__body
+                                    .select__item Применение
+                                    .select__item Применение
+                                    .select__item Применение
+                            input(type="text" name="power" placeholder="Мощность (тепловая нагрузка)")
+                        h4.calculation-form__title Греющая сторона
+                        .calculation-form__fields.calculation-form__fields-temp.calculation-form__fields-temp-hot
+                            label Среда
+                            .select
+                                .select__header
+                                    span.select__current Вода
+                                    img(src="static/images/common/form-arrow.png" alt="#")
+                                .select__body
+                                    .select__item Вода
+                                    .select__item Вода
+                                    .select__item Вода
+                            label(for="temp1") Температура на входе (Т1)
+                            input(type="text" name="temp1" id="temp1" placeholder="Введите значение С°")
+                            label(for="temp2") Температура на входе (Т2)
+                            input(type="text" name="temp2" id="temp2" placeholder="Введите значение С°")
+                            label(for="consumption1") Расход (м3/час)
+                            input(type="text" name="rate" id="consumption1" placeholder="")
+                    .calculation-form__img
+                        img(src="static/images/content/calc-product.png", alt="Product")
+                    .calculation-form__block
+                        h4.calculation-form__title Единица измерения
+                        .calculation-form__fields
+                            .select
+                                .select__header
+                                    span.select__current кВТ
+                                    img(src="static/images/common/form-arrow.png" alt="#")
+                                .select__body
+                                    .select__item кВТ
+                                    .select__item кВТ
+                                    .select__item кВТ
+                            .select
+                                .select__header
+                                    span.select__current 10 атм
+                                    img(src="static/images/common/form-arrow.png" alt="#")
+                                .select__body
+                                    .select__item 10 атм
+                                    .select__item 10 атм
+                                    .select__item 10 атм
+                        h4.calculation-form__title Нагреваемая сторона
+                        .calculation-form__fields.calculation-form__fields-temp.calculation-form__fields-temp-cold
+                            label Среда
+                            .select
+                                .select__header
+                                    span.select__current Вода
+                                    img(src="static/images/common/form-arrow.png" alt="#")
+                                .select__body
+                                    .select__item Вода
+                                    .select__item Вода
+                                    .select__item Вода
+                            label(for="temp4") Температура на входе (Т4)
+                            input(type="text" name="temp4" id="temp4" placeholder="Введите значение С°")
+                            label(for="temp3") Температура на входе (Т3)
+                            input(type="text" name="temp3" id="temp3" placeholder="Введите значение С°")
+                            label(for="consumption2") Расход (м3/час)
+                            input(type="text" name="rate" id="consumption2" placeholder="")
+                .calculation-form__contacts
+                    h4.calculation-form__title Контактные данные
+                    .calculation-form__fields.calculation-form__fields-contacts
+                        input(type="text" name="name" placeholder="Ваше имя")
+                        input(type="email" name="email" placeholder="Ваш email")
+                        input(type="phone" name="phone" placeholder="Ваш телефон")
+                    .calculation-form__fields.calculation-form__fields-download
+                        label.file-upload
+                            input(type="file")
+                            .file-upload__custom
+                                span Загрузите фото шильдика, расчетный лист, спецификацию или опросный лист
+                                span.file-upload__text Прикрепить файл
+                    .calculation-form__fields.calculation-form__fields-text
+                        textarea(placeholder="Ваш комметарий к подбору и расчёту")
+                    button(type="submit").btn Рассчитать теплообменник
