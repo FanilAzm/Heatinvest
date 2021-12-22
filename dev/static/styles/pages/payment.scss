@@ -1,0 +1,13 @@
+.payment-content {
+  font-size: 14px;
+  &__title {
+    margin: 17px 0;
+    font-size: 16px;
+    font-family: $boldFont;
+  }
+  &__info {
+    span {
+      display: block;
+    }
+  }
+}

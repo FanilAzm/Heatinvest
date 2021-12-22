@@ -16,6 +16,22 @@ $(document).ready(function () {
     $('.menu-catalog').removeClass('active')
   })
 
+  // Copy mail
+  function copyToClipboard (copyText) {
+    copyText.select()
+    document.execCommand('copy')
+    console.log(copyText.val())
+    return copyText.val()
+  }
+  const copyBtn = $('.copymail')
+  copyBtn.on('click', function () {
+    const copyText = $('.manager textarea')
+    // const copySuccess = $('.top-bar__success')
+
+    copyToClipboard(copyText)
+    // copySuccess.addClass('top-bar__success_active')
+  })
+
   // Select
   const selectCurrent = document.querySelectorAll('.select__header')
   const selectItem = document.querySelectorAll('.select__item')

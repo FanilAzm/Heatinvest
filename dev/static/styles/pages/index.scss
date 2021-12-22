@@ -353,6 +353,24 @@
   }
 }
 
+.section-form-white {
+  .section-form__content {
+    align-items: flex-start;
+    padding-left: 50px;
+    background-color: $white;
+    border: 1px solid $blue;
+    color: #282828;
+  }
+  .section-form__form {
+    input {
+      background-color: #ECECEC;
+    }
+  }
+  .btn {
+    background-color: $blue;
+  }
+}
+
 
 .manufacturers {
   .partners-items {

@@ -1,0 +1,41 @@
+extends layout/main
+
+block variables
+    -var title = 'Оплата'
+
+block content
+    section.payment.section-margin
+        .container
+            h2.section-title Оплата
+            ul.breadcrumbs
+                include modules/breadcrumbs/breadcrumbs
+                +breadcrumbs-item('Главная','index.html')
+                +breadcrumbs-item('Оплата')
+            .payment-content
+                h4.payment-content__title Физические лица:
+                p.payment-content__descr После того как заказ был подтвержден, ваш личный менеджер присылает вам счёт на оплату, оплата возможна как банковским переводом, так и оплата по qr коду который будет прикреплен в этом же счёте.
+                h4.payment-content__title Юридические лица:
+                .payment-content__info
+                    span ООО «ХИТИНВЕСТ»
+                    span Юридический адрес:
+                    span 614007, г. Пермь, ул. 25 Октября ,101 этаж 8
+                    span Почтовый адрес:
+                    span 614007, г. Пермь, ул. 25 Октября ,101 этаж 8
+                    span ИНН: 5904993922
+                    span КПП: 590401001
+                    span ОГРН: 1145958010010
+                    span ОКПО: 31558262
+                    span р/с: 40702810524520000730
+                    span Банк: ПРИВОЛЖСКИЙ ФИЛИАЛ ПАО РОСБАНК г. Нижний Новгород
+                    span к/с: 30101810400000000747
+                    span БИК: 042202747
+    section.section-form.section-form-white.section-margin
+        .container
+            .section-form__content
+                h3.section-form__title Есть вопросы по оплате?
+                p.section-form__descr Оставьте заявку и наш специалист свяжется с вами в ближайшее время
+                form.section-form__form
+                    input(name="name" type="text" placeholder="Ваше имя")
+                    input(name="phone" type="phone" placeholder="Ваш телефон")
+                    input(name="mail" type="mail" placeholder="Ваш E-mail")
+                    button(type="submit").btn Отправить

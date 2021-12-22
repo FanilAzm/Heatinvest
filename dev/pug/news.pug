@@ -1,0 +1,58 @@
+extends layout/main
+
+block variables
+    -var title = 'Новости'
+
+block content
+    section.news.section-margin
+        .container
+            h2.section-title Новости
+            ul.breadcrumbs
+                include modules/breadcrumbs/breadcrumbs
+                +breadcrumbs-item('Главная','index.html')
+                +breadcrumbs-item('Новости')
+            .news-items
+                .news-item
+                    .news-item__img
+                        img(src="static/images/content/news-img-1.png" alt="Пластинчатые теплообменники в пивоварении")
+                    .news-item__info
+                        h3.news-item__title Пластинчатые теплообменники в пивоварении
+                        .news-item__date 11.08.2021
+                        p.news-item__descr Использование теплообменников в пивоварении позволяет сократить энергозатраты и обеспечивает повышение эффективности производства за счет высочайшего процента рекуперации. Теплообменники используются для охлаждения сусла в процессе приготовления пива и при пастеризации напитка. Пластинчатый прибор способен быстро охлаждать значительные объемы жидкости. Максимальная пропускная способность теплообменного аппарата практически не ограничена ...
+                        button.btn.btn-white Читать далее
+                .news-item
+                    .news-item__img
+                        img(src="static/images/content/news-img-2.png" alt="Конденсатные насосы: устройство, принцип работы и сферы применения")
+                    .news-item__info
+                        h3.news-item__title Конденсатные насосы: устройство, принцип работы и сферы применения
+                        .news-item__date 04.08.2021
+                        p.news-item__descr Конденсатные насосы служат для принудительной откачки отработанного конденсата из пароприемников и паропроводов, а также для недопущения утечки пара в сетях теплоснабжения. Конденсатные насосы отличаются от обычных тем, что могут работать с конденсатом температурой выше 120ᵒС (до 160ᵒС)...
+                        button.btn.btn-white Читать далее
+                .news-item
+                    .news-item__img
+                        img(src="static/images/content/news-img-3.png" alt="Закрытая и открытая системы отопления: плюсы и минусы")
+                    .news-item__info
+                        h3.news-item__title Закрытая и открытая системы отопления: плюсы и минусы
+                        .news-item__date 04.08.2021
+                        p.news-item__descr Принцип работы системы отопления состоит в следующем: теплоноситель – вода  нагревается в котле до необходимой температуры и по трубопроводу поступает к радиаторам. Те излучают тепло и обогревают помещение. Вода остывает, возвращается в котел и таким образом получается постоянно повторяющийся...
+                        button.btn.btn-white Читать далее
+                .news-item
+                    .news-item__img
+                        img(src="static/images/content/news-img-4.png" alt="Надежный разборный пластинчатый теплообменник по оптимальной цене")
+                    .news-item__info
+                        h3.news-item__title Надежный разборный пластинчатый теплообменник по оптимальной цене
+                        .news-item__date 11.08.2021
+                        p.news-item__descr Как снизить издержки на теплообмен и при этом не потерять в качестве? Необходимо найти качественный аналог хорошего оборудования. Именно этим являются разборные пластинчатые теплообменники Clever heat. Эти устройства – аналог теплообменников Ридан, но при этом они имеют приемлемую цену.
+                        button.btn.btn-white Читать далее
+            .pagination-wrapper
+                .pagination
+                    span.page-numbers.current(aria-current='page') 1
+                    a.page-numbers(href='javascript:;') 2
+                    a.page-numbers(href='javascript:;') 3
+                    a.page-numbers(href='javascript:;') 4
+                    a.page-numbers(href='javascript:;') 5
+                    a.page-numbers(href='javascript:;') 6
+                    a.page-numbers(href='javascript:;') 7
+                    a.page-numbers(href='javascript:;') 8
+                    a.page-numbers(href='javascript:;') 9
+                    a.page-numbers(href='javascript:;') 10
