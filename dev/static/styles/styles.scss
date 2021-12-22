@@ -91,6 +91,10 @@ button { outline: none; }
   margin: 65px 0;
 }
 
+.section-margin-small {
+  margin: 35px 0 47px;
+}
+
 .section-title {
   font-size: 42px;
   font-family: $boldFont;
@@ -98,10 +102,6 @@ button { outline: none; }
   @include screen(890px) {
     font-size: 35px;
   }
-}
-
-.text-left {
-  text-align: left;
 }
 
 .section-link {
@@ -139,6 +139,27 @@ button { outline: none; }
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 63px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-list {
+  margin: 25px 0;
+  list-style-type: none;
+  font-size: 14px;
+  li {
+    position: relative;
+    padding-left: 20px;
+    &:before {
+      content: '·';
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 }
 
 .btn {
